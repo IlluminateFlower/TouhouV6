@@ -1,0 +1,74 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #FFD580;
+}
+
+#choiceHolder {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#scoreBoard {
+  position: fixed;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  bottom: 5vh;
+  background-color: #BBEd88;
+}
+
+
+#introExplain {
+  display: none;
+}
+
+#ccExplain {
+  display: none;
+}
+
+#diffButtHold {
+  display: flex;
+  justify-content: space-between;
+}
+
+#speciesExplain {
+  display: none;
+}
+
+
+div.explain {
+  background-color: #FFEd88;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+button.sections {
+  background-color: #FdFdF8;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+button.choice {
+  background-color: #ffd888;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

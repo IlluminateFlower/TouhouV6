@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Touhou CYOA</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" 
+</head>
+
+<body>
+
+  <div id="choiceHolder">
+    <button class="sections" id="Intro"> Intro </button>
+    <button class="sections" id="CharCreate"> Character Creation </button>
+    <button class="sections" id="styleCreate"> Danmaku Style </button>
+    <button class="sections" id="dropLocate"> Starting Location </button>
+    <button class="sections" id="JorCreate"> Journey </button>
+  </div>
+
+  <div class="explain" >
+    <p> 
+      Click a button above to open a tab. 
+      The intended order is from right to left.
+    </p>
+  </div>
+
+  <div class="explain" id="introExplain">
+    <p> 
+      Gensokyo is a bastion of fantasy against the rapidly progressing technology of the human world.
+     <div> Sealed away by the Hakurei barrier, Gensokyo is a land where yokai, spirits and gods reside. </div>
+      </br>
+     <div> humans also live within Gensokyo. Most humans live their idle lives within the human village protected by the Hakurei shrine maiden. </div>
+      </br>
+      <div> Oh! and of course-- <i> you </i> also have made your way into gensokyo for one reason or another. Or did you always live here? </div>
+  </br>
+      <div> Since I am <i> oh so benevolent</i>, I will allow you a small stipend to spend on mostly inant abilities, so you won't be callously slaughtered by some stray, feral yokai on entry. Hm? Who am I? Don't worry about that. </div> </br>
+    <div> (oh and also, you can view how many Arbitrary Power Points you currently have at the bottom of the screen. Make sure it ends with a non-negative number, alright?) </div>
+    </p>
+
+    <div id="diffButtHold">
+      <button class="choice" id="diffE"> Easy 
+        <div> Celestial Gift </div>  
+        <div> 16 aPP start </div>
+      </button>
+      <button class="choice" id="diffN"> Normal 
+        <div> Divine Blessing </div>
+        <div> 12 aPP start </div>
+      </button>
+      <button class="choice" id="diffH"> Hard 
+       <div> Spiritual Aid </div>
+       <div> 8 aPP start </div>
+      </button>
+      <button class="choice" id="diffL"> Lunatic 
+       <div> All Alone </div>
+       <div> 4 aPP start </div> 
+      </button>
+    </div>
+  </div>
+
+  <div class="explain" id="ccExplain">
+    <p> Now, tell me. What were you like? I'd like to know more about your traits as a person, then your physical appearance. But... I guess I won't stop you from reminescing on it. (These are also split into their own tabs.) </p>
+
+    <div>
+      <button class="sections" id="specBut"> Species </button>
+      <button class="sections"> Appearance </button>
+      <button class="sections"> Flaws </button>
+      <button class="sections"> Boons </button>
+    </div> 
+  </div>
+
+    <!-- Character Creation Tab below -->
+  <div class="explain" id="speciesExplain">
+    <p> First, we need to get a good idea of <i> what</i> you are. Most of these have both ups and downs, so choose wisely. It's next to impossibly to change this option after I've set you loose. </p>
+    <div> 
+
+      <button class="choice" id="spcINCHLING">
+        <b> Inchling </b> <div> <i> +2 aPP </i></div>
+        <div> Tiny, little things </div>
+        <div> Weaker than humans </div>
+        <div> Easier to evade things or people </div>
+        <div> More points for your struggles </div>
+      </button>
+
+      <button class="choice" id="spcAMONJA">
+        <b> Amanojaku </b> <div><i> +2 aPP </i> </div>
+        <div> No stronger than a human</div>
+        <div> Feels the reverse of other's emotions </div>
+        <div> Universally Disliked, even hated </div>
+      </button>
+      
+      <button class="choice" id="spcHUMAN">
+        <b> Human </b> <div> <i> free </i> </div>
+        <div> Nothing Special</div>
+        <div> Protected by the Shrine Maiden</div>
+        <div> Easier access to Human Village </div>
+        <div> May need to hide magical abilities </div>
+      </button>
+
+      <button class="choice" id="spcSPIRIT">
+        <b> Ghost </b> <div> <i> free </i> </div>
+        <div> Can unlock spirit abilities </div>
+        <div> Boost in spiritual ability </div>
+        <div> Weakened physical ability </div>
+        <div> Easier access to Hell's society </div>
+      </button>
+
+      <button class="choice" id="spcBEAST">
+        <b> Beast Yokai </b> <div> <i> free </i> </div>
+        <div> Animal who became a yokai via magic residue </div>
+        <div> Animal of your choosing </div>
+        <div> Boost in physical ability </div>
+        <div> lacks inate spiritual ability </div>
+        <div> Lacks much of a place in society </div>
+      </button>
+
+      <button class="choice" id="spcTSUKOMO">
+        <b> Tsukomogami </b> <div> <i> 1 aPP </i> </div>
+        <div> Awoken spirit of an object (Your choice) </div>
+        <div> Can blend into Human society </div>
+        <div> Low Tier Yokai </div>
+        <div> Still stronger than most humans </div>
+        <div> Boost to inate magic ability </div>
+      </button>
+
+      <button class="choice" id="spcROKURO">
+        <b> Rokurokubi </b> <div> <i> 1 aPP </i></div>
+        <div> Has a detachable head </div>
+        <div> or extendable neck...</div>
+        <div> Hard to put down</div>
+        <div> not much stronger than humans </div>
+      </button>
+
+      <button class="choice" id="spcTENGUw">
+        <b> Tengu (wolf) </b> <div> <i> 1 aPP </i></div>
+        <div> Lowest of the Tengu </div>
+        <div> Greater physical power and prowess</div>
+        <div> Easier access to the Tengu society</div>
+        <div> Higher 'class' tengu may look down on you</div>
+      </button>
+
+      <button class="choice" id="spcTENGUb">
+        <b> Tengu (bird) </b> <div> <i> 2 aPP </i> </div>
+        <div> Mid-class Tengu </div>
+        <div> Natural ability to fly</div>
+        <div> natural gift in wind magic</div>
+        <div> easier access to tengu society </div>
+        <div> sterotyped by most who aren't tengu </div>
+      </button>
+
+      <button class="choice" id="spcKAPPA">
+        <b> Kappa </b> <div> <i> 2 aPP </i></div>
+        <div> Natural gift in water magic</div>
+        <div> Can breath underwater </div>
+        <div> easier access to Kappa society </div>
+        <div> Cucumber obsession </div>
+      </button>
+
+      <button class="choice" id="spcFAIRY">
+        <b> Fairy </b> <div> <i> 2 aPP </i></div>
+        <div> Nature spirits </div>
+        <div> Choose a natural thing to be attached to </div>
+        <div> Can reform from death </div>
+        <div> Increadible boost to magic related to natural bond </div>
+      </button>
+
+      <button class="choice" id="spcSATORI">
+        <b> Satori </b> <div> <i> 2 aPP </i> </div>
+        <div> Can read minds </div>
+        <div> Can see others memories </div>
+        <div> Heavily hated because of said abilities </div>
+        <div> Can't turn said abilities off </div>
+      </button>
+
+      <button class="choice" id="spcBAKENEKO">
+        <b> Bakeneko </b> <div> <i> 2 aPP </i> </div>
+        <div> Cat yokai </div>
+        <div> Increadibly Agile </div>
+        <div> Can also communicate with normal cats </div>
+        <div> May not withstand strong blows </div>
+      </button>
+
+      <button class="choice" id="spcGOD">
+        <b> Divine Spirit</b> <div> <i> 3 aPP </i></div>
+        <div> Can grant miracles </div>
+        <div> Control over your domains </div>
+        <div> Power scales with faith </div>
+        <div> You will need to maintain faith (or die trying) </div>
+        <div> You get a faith stipend that'll last you half a year on entry</div>
+      </button>
+
+      <button class="choice" id="spcONI">
+        <b> Oni </b> <div> <i> 4 aPP </i></div>
+        <div> Increadible physical strength </div>
+        <div> Hard to put down for good </div>
+        <div> Easier access to Hell's society </div>
+        <div> intense craving for alcohol </div>
+      </button>
+
+      <button class="choice" id="spcVAMP">
+        <b> Vampire </b> <div> <i> 4 aPP </i></div>
+        <div> Increadible magical strength </div>
+        <div> Inate ability to fly.</div>
+        <div> Hard to put down for good. </div>
+        <div> Sunlight weakens you. </div>
+        <div> Enough sunlight will kill you. </div>
+      </button>
+      
+    </div>
+  </div>
+  
+  <div id="scoreBoard">
+    <p id="scoreTxt">  aPP: 0 </p>
+  </div>
+
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>
